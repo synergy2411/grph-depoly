@@ -5,10 +5,6 @@
   "main": "index.js",
   "scripts": {
     "start:dev": "SET NODE_ENV=development&& nodemon --exec babel-node src/server.js",
-    "test": "jest --watchAll --timeout=10000",
-    "clean": "rimraf dist && mkdir dist",
-    "build:babel": "babel -d ./dist ./src -s",
-    "build": "npm run clean && npm run build:babel",
     "start": "node dist/server.js"
   },
   "keywords": [],
